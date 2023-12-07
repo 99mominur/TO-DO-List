@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: linear-gradient(135deg, #f6fdc3, #cdfad5);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  margin-top: 100px;
+  color: white;
+}
+
+.main {
+  width: 100vw;
+  max-width: 400px;
+  background: #ff8080;
+  border-radius: 20px;
+  padding: 1.2vh 1vw;
+}
+.main h3 {
+  margin: 20px 10px 10px;
+}
+
+.icon {
+  color: rgb(56, 220, 166);
+}
+
+.search {
+  background: #cdfad5;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  margin: 0 10px 20px;
+}
+.search input {
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  background: transparent;
+  padding-left: 20px;
+  width: 90%;
+}
+.search button {
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  width: 60px;
+  background: #ffcf96;
+  cursor: pointer;
+}
+.list {
+  margin: 20px 10px 10px;
+}
+
+.list li {
+  margin: 5px 0;
+  display: flex;
+}
+.list li i {
+  padding-right: 5px;
+  cursor: pointer;
+}
+.removed {
+  text-decoration: line-through;
+}
+.removed .circle {
+  display: none;
+}
