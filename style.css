@@ -24,7 +24,7 @@ body {
 
 .main {
   width: 100vw;
-  max-width: 400px;
+  max-width: 470px;
   background: #ff8080;
   border-radius: 20px;
   padding: 1.2vh 1vw;
@@ -61,21 +61,57 @@ body {
   background: #ffcf96;
   cursor: pointer;
 }
-.list {
-  margin: 20px 10px 10px;
-}
 
-.list li {
-  margin: 5px 0;
-  display: flex;
-}
-.list li i {
-  padding-right: 5px;
+ul li {
+  font-size: 17px;
+  color: #ff8080;
+  background-color: #cdfad5;
+  border-radius: 10px;
+  padding: 5px;
+  padding: 10px 10px 10px 50px;
+  margin: 0 10px 10px 10px;
+  user-select: none;
+  position: relative;
   cursor: pointer;
 }
-.removed {
+
+ul li::before{
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-image: url(./images/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 5px ;
+  left: 8px;
+}
+
+.checked{
+  color: #555;
   text-decoration: line-through;
+
 }
-.removed .circle {
-  display: none;
+
+.checked::before{
+  background-image: url(./images/checked.png);
 }
+
+
+ul li span{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  line-height: 44px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li span:hover{
+background: #706f6f;
+color: red;
+} 
